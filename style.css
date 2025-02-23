@@ -15,3 +15,14 @@ header {
         background-color: lightblue;
     }
 }
+body {
+    background: linear-gradient(-45deg, #ff0000, #ff7300, #ff00ff, #0000ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
