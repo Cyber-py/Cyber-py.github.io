@@ -1,51 +1,20 @@
-<script src="script.js"></script>
-<link rel="stylesheet" href="style.css">
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .content {
-            text-align: center;
-            padding-top: 50px;
-            font-size: 24px;
-        }
+    
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    <script>
-        // Change the title text every 1 second
-        let titles = ["Cyber"];
-        let currentTitle = 0;
-
-        function changeTitle() {
-            document.title = titles[currentTitle];
-            currentTitle = (currentTitle + 1) % titles.length; // Loop through the titles
-        }
-
-        // Change the title every 1 second
-        setInterval(changeTitle, 1000);
-    </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom URL Bar Animation</title>
+    <!-- Custom Styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
         }
 
+        /* Custom URL Bar Styling */
         .url-bar {
             width: 100%;
             padding: 10px;
@@ -63,7 +32,7 @@
             animation: slideIn 5s infinite alternate;
         }
 
-        /* Animation to slide the URL bar in from the right */
+        /* Animation for URL bar */
         @keyframes slideIn {
             0% {
                 transform: translateX(100%);
@@ -73,10 +42,37 @@
             }
         }
     </style>
+
 </head>
 <body>
+
+    <!-- Custom URL Bar -->
     <div class="url-bar">
         <span>https://cyber-py.github.io/</span>
+    </div>
+
+    <div class="content" style="margin-top: 60px; text-align: center;">
+        <h1>Welcome to CyberAI</h1>
+        <p>Check out the animated URL bar and title animation!</p>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Internal JavaScript (for Title Animation) -->
+    <script>
+        // Title change animation for the browser tab
+        let titles = ["Cyber"];
+        let currentTitle = 0;
+
+        function changeTitle() {
+            document.title = titles[currentTitle];
+            currentTitle = (currentTitle + 1) % titles.length; // Loop through titles
+        }
+
+        // Change the title every 1 second
+        setInterval(changeTitle, 1000);
+    </script>
 
 </body>
 </html>
